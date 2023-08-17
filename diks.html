@@ -1,0 +1,27 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>PHP INSERT UPDATE DELETE SEARCH</title>
+    </head>
+    <body>
+        <form action="php_insert_update_delete_search.php" method="post">
+            <input type="number" name="id" placeholder="Id" value="<?php echo $id;?>"><br><br>
+            <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
+            <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
+            <input type="number" name="age" placeholder="Age" value="<?php echo $age;?>"><br><br>
+            <div>
+                <!-- Input For Add Values To Database-->
+                <input type="submit" name="insert" value="Add">
+                
+                <!-- Input For Edit Values -->
+                <input type="submit" name="update" value="Update">
+                
+                <!-- Input For Clear Values -->
+                <input type="submit" name="delete" value="Delete">
+                
+                <!-- Input For Find Values With The given ID -->
+                <input type="submit" name="search" value="Find">
+            </div>
+        </form>
+    </body>
+</html>

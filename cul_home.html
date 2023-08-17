@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #20978C     ;
+  border: none;
+  color: ##20978C     ;
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="cul_home.html" class="w3-bar-item w3-button w3-padding-large"><b>HOME</b></a>
+    <!--<div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More"><b>REGISTER</b> <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="lsin.html" class="w3-bar-item w3-button">SIGN-UP</a>
+        <a href="" class="w3-bar-item w3-button">SIGN-IN</a>
+      </div>
+    </div>-->
+	<a href="lsin.html" class="w3-bar-item w3-button w3-padding-large"><b>REGISTER</b></a> 
+	<!--<a href="about.html" class="w3-bar-item w3-button w3-padding-large"><b>ABOUT</b></a> -->
+    <!--  THIS IS FOR EVENTS -->	
+	<div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More"><b>EVENTS</b> <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="exam.html" class="w3-bar-item w3-button"><b>DANCE</b></a>
+        <a href="music.html" class="w3-bar-item w3-button"><b>MUSIC</b></a>
+		<a href="drama.html" class="w3-bar-item w3-button"><b>DRAMA/SKIT</b></a>
+		<a href="fashion.html" class="w3-bar-item w3-button"><b>MASQUERADE</b></a>
+      </div>
+    </div>
+	
+	
+	
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>CREATIVE_EVENTS</b></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>CONTACT</b></a>
+	<!--<a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>NEWS</b></a>-->
+	<a href="map.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>MAPS</b></a>
+	
+	<div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More"><b>PARTICIPATION-LISTS!</b> <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dancedisplay.php" class="w3-bar-item w3-button"><b>DANCE-PARTCIPATION</b></a>
+        <a href="musicdisplay.php" class="w3-bar-item w3-button"><b>MUSIC-PARTCIPATION</b></a>
+		<a href="dramadisplay.php" class="w3-bar-item w3-button"><b>DRAMA/SKIT-PARTCIPATION</b></a>
+		<a href="fashiondisplay.php" class="w3-bar-item w3-button"><b>MASQUERADE-PARTCIPATION</b></a>
+      </div>
+    </div>
+	
+	
+	
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://604now.com/wp-content/uploads/2013/08/vancouverevents1.jpg" style="width:85%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><b>ATRIA INSTITUTE OF TECHNOLOGY</b></h3>
+      <p><b>We had the best time playing at Atria Saptharang!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="sc3.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>ATRIA INSTITUTE OF TECHNOLOGY</h3>
+      <p><b>It's for the time to ENJOY!</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="sc1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>ATRIA INSTITUTE OF TECHNOLOGY</h3>
+      <p><b>Thank you, ATRIA - A night we won't forget.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="sc3.jpg" style="width:85%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><b>ATRIA INSTITUTE OF TECHNOLOGY</b></h3>
+      <p><b>We had the best time playing at Atria Culyural events!!!!!!</b></p>   
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music, dance and all events!!!!!!!</i></p>
+    <p class="w3-justify">The challenges of tomorrow cannot be solved by yesterday’s methods. We believe that education needs to be done differently if we are to thrive in the emerging future. We aim to create Visioneers and empower them to evolve as confident, curious and creative solution-drivers equipped to tackle challenges and convert them into opportunities, whatever and wherever their context.
+
+</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p><b>Appreciation</b></p>
+        <img src="https://scontent-yyz1-1.cdninstagram.com/vp/48d82a60fc57f2932bfdab9c2d9392a8/5E412158/t51.2885-15/sh0.08/e35/s640x640/36989058_625738131146556_631975330613035008_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=100" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p><b>Alumini Execute</b></p>
+        <img src="https://scontent-yyz1-1.cdninstagram.com/vp/38e38a89d8b62c8374f56176940ab813/5E549627/t51.2885-15/e35/c257.0.565.565a/66500462_397238434477683_7058730505373756357_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=103" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p><b>Atria City of Learning</b></p>
+        <img src="https://scontent-yyz1-1.cdninstagram.com/vp/ae77a7f8c83208e8f3089ccfa319545c/5E4DF660/t51.2885-15/e35/67793879_2389519531323233_8409964322756919279_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=105" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">BEST EVENTS DATES</h2>
+      <p class="w3-opacity w3-center"><b>Remember to book your tickets!....Hurry up!!!</b></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3 Remaining</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSom_hQkioJzsIPU_8mH8UjnIc7VYmyvAApLBJMdVukBvKWu6a0Ag&s" alt="ATRIA-CONCERTS" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ATRIA-CONCERTS!!!!</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Music to ears is like a soul to life. Escape the monotonous life and find pieces of you by attending live music events, festivals and concerts in Bangalore, lets enjoy the event to the fullest extent.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="data:image/jpeg;base64,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" alt="ART & THEATRE" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ART & THEATRE</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Attending a theatre workshop could be tremendous fun and an absolute stress buster. Be it improv, musicals, open mics, screening or performing arts in Bangalore.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Gc4XVAkciPmlMBqiEENfqLKWMgaQnmLfhwqOs1gSdix1sA10&s" alt="FOOD & DRINKS" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>FOOD & DRINKS</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>If you are a food stylist, food blogger, gourmet chef, caffeine junkie or just a keen foodie, you definitely are more worried about your salad being finely chopped than your appearance</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+		<button class="button" style="vertical-align:middle"><span><a href="table_details.html">DETAILS</a></span></button>
+		<button class="button" style="vertical-align:middle"><span><a href="payment.html">PAY</a></span></button>
+		
+		
+       <!-- <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">"PAY <i class="fa fa-check"></i></button>
+       <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> ATRIA INSTITUTE OF TECHNOLOGY, ANANDNAGAR<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: atria@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="contact.php" method="post"target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" name="name"placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" name="email" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" name="message" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="image.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

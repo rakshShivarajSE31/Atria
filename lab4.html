@@ -1,0 +1,29 @@
+<html>
+<body>
+<script type="text/javascript">
+var str = prompt("enter the string:","");
+if(isNaN(str)) {
+str = str.toUpperCase();
+for(var i=0;i<str.length;i++) {
+var chr = str.charAt(i);
+if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') break;
+}
+if(i < str.length)
+alert("the left most str is"+(i+1));
+else
+alert("enter valid one:");
+}
+else {
+var rem,num,rev=0;
+num = parseInt(str);
+while(num!=0) {
+rem = num%10;
+num = parseInt(num/10);
+rev = rev*10+rem;
+}
+alert("the pal is"+str+"rev is"+rev);
+}
+</script>
+</body>
+</html>
+

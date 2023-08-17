@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+body {
+	background-image: url("https://media.gq.com/photos/55f9bdb32de2e54e38607636/16:9/w_2992,h_1683,c_limit/GettyImages-488589090.jpg");
+       border: 10px double black;
+       padding: 25px;
+	   background-repeat:no-repeat;
+       background-size:cover;
+	  
+}
+<!--.img-area{
+			background-image: url("https://thumbs.dreamstime.com/b/ballet-dancers-stage-performing-89693089.jpg");
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center center;
+			height: 450px;
+			position: fixed;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			filter: blur(6px);
+			-webkit-filter: blur(6px);s
+		}-->
+
+
+
+
+h1 {
+  color:#A72299;
+  text-align: center;
+}
+
+.form-style-3{
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color: #701166   ;  <!-- headings colo is blue-->
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #781B6E  ;  <!--border box-->
+	padding: 20px;
+	background: #EED5EC ;    <!--bg-->
+	box-shadow: inset 0px 0px 15px #DF80D5 ;  <!--box shadow-->
+	-moz-box-shadow: inset 0px 0px 15px #DF80D5 ;  <!--box shadow-->
+	-webkit-box-shadow: inset 0px 0px 15px #DF80D5 ;  <!--box shadow-->
+}
+.form-style-3 fieldset legend{
+	color: ##22969E ; <!--headings top color-->
+	border-top: 1px solid #DF80D5 ;  <!--border box-->
+	border-left: 1px solid #DF80D5 ; <!--border box-->
+	border-right: 1px solid #DF80D5 ; <!--border box-->
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #EED5EC;      <!--bg-->
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #D8B0D4 ;  <!--box shadow-->
+	-moz-box-shadow:-0px -1px 2px #D8B0D4 ;  <!--box shadow-->
+	-webkit-box-shadow:-0px -1px 2px #D8B0D4 ;  <!--box shadow-->
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+	
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #AD239F   ; <!-- box border-->
+	outline: none;
+	color: ##075B61  ;  <!-- dont change-->
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #E799DE ;
+	-moz-box-shadow: inset 1px 1px 4px #E799DE ;
+	-webkit-box-shadow: inset 1px 1px 4px #E799DE ;
+	background: #EBF6F7;  <!--box background which is light blue-->
+	width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #BA66B1   ;
+	border: 1px solid #BA66B1 ;
+	padding: 5px 15px 5px 15px;
+	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px #BA66B1  ;
+	-moz-box-shadow: inset -1px -1px 3px #BA66B1  ;
+	-webkit-box-shadow: inset -1px -1px 3px #BA66B1  ;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #BA66B1   ;
+  border: none;
+  color: #BA66B1   ;
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<h1>ENTER MUSIC-DETAILS AND THEN PROCEED FOR PAYMENT</h1>
+
+
+
+
+
+<div class="form-style-3">
+<form action="fashional.php" method="post">
+
+<fieldset><legend><b>Personal</b></legend>
+<label for="usn"><span><b>USN </b><span class="required">*</span></span><input type="text" placeholder="your usn number"  class="input-field" id="usn" name="usn" value="" /></label>
+<label for="name"><span><b>Name </b><span class="required">*</span></span><input type="text" placeholder="your name" class="input-field" id="name" name="name" value="" /></label>
+<label for="email"><span><b>Email </b><span class="required">*</span></span><input type="text" placeholder="enter Primary mail-id" class="input-field" id="email"name="email" value="" /></label>
+<label for="phone"><span><b>Phone</b> <span class="required">*</span></span><input type="number" placeholder="Valid phone number" class="input-field" id="phone"name="phone" value="" /></label>
+<label for="sem"><span><b>SEM </b><span class="required">*</span></span><input type="number" placeholder="current sem" class="input-field" id="sem" name="sem" value="" /></label>
+</fieldset>
+
+<fieldset><legend><b>Cultural-event-deatil</b></legend>
+<label for="date"><span><b>DATE</b> <span class="required">*</span></span><input type="date" class="input-field" id="date" name="date" value="" /></label>
+<label for="dancef"><span><b>MUSIC-FORM</b><span class="required">*</span></span><select name="dancef" type="text">
+<option value="Classic"><b>Classic</b></option>
+<option value="Rock"><b>Rock</b></option>
+<option value="Jazz"><b>Jazz</b></option>
+<option value="Rap"><b>Rap</b></option>
+<option value="Pop"><b>Pop</b></option>
+<option value="Opera"><b>Opera</b></option>
+<option value="Folk"><b>Folk</b></option>
+<option value="Country"><b>Country</b></option>
+<option value="Heavy-Metal"><b>Heavy-Metal</b></option>
+</select></label>
+<label for="teamn"><span><b>TEAM-NAME </b><span class="required">*</span></span><input type="text" class="input-field" id="teamn"name="teamn" value="" /></label>
+<label for="membersc"><span><b>MEMBERS-COUNT</b> <span class="required">*</span></span><input type="number" class="input-field" id="membersc" name="membersc" value="" /></label>
+</fieldset>
+
+<fieldset><legend><b>Message</b></legend>
+<label for="message"><span><b>Message</b> <span class="required">*</span></span><textarea id="message" name="message" type="text" class="textarea-field"></textarea></label>
+<label><span> </span><input type="submit"  value="SUBMIT" /></label>
+</fieldset>
+</form>
+</div>
+
+<button class="button" style="vertical-align:middle"><span><a href="table_details.html">DETAILS</a></span></button>
+<button class="button" style="vertical-align:middle"><span><a href="payment.html">PAY</a></span></button>
+
+</body>
+</html>
